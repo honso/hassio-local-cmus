@@ -8,11 +8,9 @@
     "startup": "application",
     "boot": "auto",
     "options": {
-        "cmus_username": "mypassword",
         "cmus_password": "mypassword"
     },    
     "schema": {
-        "cmus_username": "str",
         "cmus_password": "str"
     },
     "audio": true,

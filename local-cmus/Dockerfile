@@ -5,7 +5,12 @@ ENV LANG C.UTF-8
 
 RUN apk update
 RUN apk add --no-cache cmus
-RUN sed -i 's/geteuid/getppid/' /usr/bin/cmus
+
+VOLUME /etc/cmus
+WORKDIR /etc/cmus
+
+ENV CMUS_HOME=/etc/cmus
+ENV USERNAME=root
 
 COPY run.sh /
 RUN chmod a+x /run.sh

@@ -1,6 +1,6 @@
 {
     "name": "Local cmus",
-    "version": "0.3",
+    "version": "0.4",
     "slug": "local_cmus",
     "description": "Play multimedia locally using cmus",
     "url": "https://github.com/honso/hassio-local-cmus",    

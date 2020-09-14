@@ -13,6 +13,7 @@ ENV CMUS_HOME=/etc/cmus
 ENV USERNAME=root
 
 COPY run.sh /
-RUN chmod a+x /run.sh
+RUN chmod a+x /run.sh \
+  && echo "set output_plugin=pulse" > rc
 
 ENTRYPOINT [ "/run.sh" ]

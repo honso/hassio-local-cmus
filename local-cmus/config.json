@@ -1,0 +1,23 @@
+{
+    "name": "Local cmus",
+    "version": "0.0",
+    "slug": "local_cmus",
+    "description": "Play multimedia locally using cmus",
+    "url": "https://github.com/honso/hassio-local-cmus",    
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "application",
+    "boot": "auto",
+    "options": {
+        "cmus_username": "mypassword",
+        "cmus_password": "mypassword"
+    },    
+    "schema": {
+        "cmus_username": "str",
+        "cmus_password": "str"
+    },
+    "audio": true,
+    "ports":{
+        "3000/tcp":3000
+    },
+    "map": ["share:ro", "ssl"]
+  }
